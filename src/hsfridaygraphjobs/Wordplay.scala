@@ -11,19 +11,21 @@ object Wordplay extends App{
 
   val lines = Source.fromFile(new File("src/resources/sowpods.txt")).getLines
 
-  val anagramsThing:Map[Map[Char, Int],Set[WordLetters]] = lines.foldLeft(Map[Map[Char, Int], Set[WordLetters]]())(foo)
 
-  println((anagramsThing.filter(_._2.size > 1) map {case (m, wl) => m.foldLeft(0)(_+_._2) -> wl}).toIndexedSeq.sortBy(-_._1).take(1))
+
+  val anagramsThing:Map[String,Set[WordLetters]] = lines.foldLeft(Map[String, Set[WordLetters]]())(foo)
+
+  println((anagramsThing.filter(_._2.size > 1) map {case (w, wl) => wl.toVector.take(1)(0).word.length -> wl}).toIndexedSeq.sortBy(- _._1).take(1))
 
 //  val letterDictionary:Map[Char, WordLetters] = lines.foldLeft(Map[Char, WordLetters]())(foo2)
 //  println((letterDictionary.toVector.sortBy(-_._2.word.length).take(1)))
 
-  def foo(m: Map[Map[Char, Int], Set[WordLetters]], w:String) =  {
+  def foo(m: Map[String,Set[WordLetters]], w:String) =  {
     if (w.nonEmpty){
       val trimWord = w.trim.toLowerCase
       val wl = WordLetters(trimWord)
-      if (m.contains(wl.letterCount)) m + (wl.letterCount -> (m(wl.letterCount) + wl))
-      else m + (wl.letterCount -> Set(wl))
+      if (m.contains(wl.wordHash)) m + (wl.wordHash -> (m(wl.wordHash) + wl))
+      else m + (wl.wordHash -> Set(wl))
     }
     else m
   }
