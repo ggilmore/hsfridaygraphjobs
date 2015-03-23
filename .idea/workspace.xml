@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d086d001-565f-4ae5-8a3b-da8ae4bf6ea8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hsfridaygraphjobs/Wordplay.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$1.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$2.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$3$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$3$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$3.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$1.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$2.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$3.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$$anonfun$bfs$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$delayedInit$body.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile$delayedInit$body.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/readlargetextfile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hsfridaygraphjobs/test.class" afterPath="$PROJECT_DIR$/bin/hsfridaygraphjobs/test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.cache" afterPath="$PROJECT_DIR$/.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hsfridaygraphjobs/readlargetextfile.scala" afterPath="$PROJECT_DIR$/src/hsfridaygraphjobs/readlargetextfile.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="d086d001-565f-4ae5-8a3b-da8ae4bf6ea8" name="Default" comment="implemented wordHash">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hsfridaygraphjobs/Wordplay.scala" afterPath="$PROJECT_DIR$/src/hsfridaygraphjobs/Wordplay.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hsfridaygraphjobs.iws" />
@@ -58,8 +42,8 @@
       <file leaf-file-name="Wordplay.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hsfridaygraphjobs/Wordplay.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28301886" vertical-offset="0" max-vertical-offset="945">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.82881004" vertical-offset="278" max-vertical-offset="1005">
+              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding>
                 <element signature="e#27#46#0" expanded="true" />
               </folding>
@@ -145,10 +129,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1440" />
+    <option name="height" value="847" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -691,16 +674,23 @@
       <workItem from="1426869976081" duration="920000" />
       <workItem from="1426889860480" duration="3601000" />
       <workItem from="1426961950926" duration="1071000" />
-      <workItem from="1427122967959" duration="7301000" />
+      <workItem from="1427122967959" duration="8414000" />
     </task>
+    <task id="LOCAL-00001" summary="added some implementations of more wordplay problems, the anagram one is REALLY slow however">
+      <created>1427130467146</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1427130467146</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16027000" />
+    <option name="totallyTimeSpent" value="17140000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1057" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="847" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -716,14 +706,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20207255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25827813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -746,6 +736,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="added some implementations of more wordplay problems, the anagram one is REALLY slow however" />
+    <MESSAGE value="implemented wordHash" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented wordHash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1044,8 +1037,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hsfridaygraphjobs/Wordplay.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28301886" vertical-offset="0" max-vertical-offset="945">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.82881004" vertical-offset="278" max-vertical-offset="1005">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
           <folding>
             <element signature="e#27#46#0" expanded="true" />
           </folding>
